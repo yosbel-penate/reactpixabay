@@ -62,7 +62,9 @@ export class App extends Component {
       <div>
         <div className="app container">
           <div className='jumbotron'>
-            <p className='lead text-center'>Buscador de Imágenes</p>
+            <div className='lead text-center m-2'>
+              <h1>Buscador de Imágenes</h1>
+            </div>
             <Search 
               dataSearch={this.dataSearch}
             />

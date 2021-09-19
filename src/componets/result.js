@@ -18,10 +18,10 @@ export default class Result extends Component {
                         />
                     ))}
                 </div>
-                <div className="row justify-content-center">
+                <div className="d-flex justify-content-between row">
                     <Pagination
-                    previousPage={this.props.previousPage}
-                    nextPage={this.props.nextPage}
+                        previousPage={this.props.previousPage}
+                        nextPage={this.props.nextPage}
                     />
                 </div>
             </React.Fragment>
