@@ -38,9 +38,11 @@ export class App extends Component {
     if(actualPage===0) return null;
     this.setState(
       {page:actualPage},
-      ()=>{this.consultApi()}
+      ()=>{
+        this.consultApi();
+        this.scroll();
+      }
       );
-    this.scroll();
   }
 
   nextPage=()=>{
@@ -48,9 +50,11 @@ export class App extends Component {
     actualPage++;
     this.setState(
         {page:actualPage},
-        ()=>{this.consultApi()}
+        ()=>{
+          this.consultApi();
+          this.scroll();
+        }
       );
-    this.scroll();
   }
 
   render() {
