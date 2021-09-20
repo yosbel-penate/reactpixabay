@@ -19,8 +19,8 @@ jobs:
         run: npm install
       - name: registry github user
         run: /
-          git config --global user.email "yosbel.penate@gmail.com"
-          git config --global user.name "yosbel-penate"
+          git config --global user.email yosbel.penate@gmail.com
+          git config --global user.name yosbel-penate
       - name: deploy the app
         run: npm run deploy
         env:
