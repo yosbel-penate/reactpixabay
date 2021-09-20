@@ -13,7 +13,7 @@ export default class Search extends Component {
         return (
             <form onSubmit={this.obtenerDatos}>
                 <div className="row">
-                    <div className="form-group col-md-8">
+                    <div className="form-group col-md-8 p-2">
                         <input ref={this.SearchRef} type="text" className="form-control
                         form-control-lg" placeholder="Search you image. Example: futbol"/>
                     </div>
