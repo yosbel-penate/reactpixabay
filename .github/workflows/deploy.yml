@@ -1,9 +1,8 @@
 name: Deploy react app
 on:
- push: 
+ push:
    branches:
      - main
-
 jobs:
  deploy:
   name: deploy app
@@ -16,15 +15,13 @@ steps:
   - uses: actions/setup-node@v1 
     with:
       node-version: ${{matrix.node-version}}
-- name: install packages
-  run: npm install
-
+  - name: install packages
+    run: npm install
   - name: registry github user
-  run: |
+  run: /
     git config --global user.email yosbel.penate@gmail.com
     git config --global user.name yosbel-penate
-
-    - name: deploy the app
-  run: npm run deploy
-  env:
-   GH_TOKEN: ${{ secrets.REACT_SEARCH }}
+  - name: deploy the app
+    run: npm run deploy
+    env:
+      GH_TOKEN: ${{ secrets.GH.TOKEN }}
