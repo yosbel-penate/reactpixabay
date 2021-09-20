@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/reactpixabay/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/reactpixabay/static/js/main.96f35cf3.chunk.js",
-    "main.js.map": "/reactpixabay/static/js/main.96f35cf3.chunk.js.map",
+    "main.js": "/reactpixabay/static/js/main.fed44f67.chunk.js",
+    "main.js.map": "/reactpixabay/static/js/main.fed44f67.chunk.js.map",
     "runtime-main.js": "/reactpixabay/static/js/runtime-main.064ca45d.js",
     "runtime-main.js.map": "/reactpixabay/static/js/runtime-main.064ca45d.js.map",
     "static/js/2.57cc0a5b.chunk.js": "/reactpixabay/static/js/2.57cc0a5b.chunk.js",
@@ -11,12 +11,13 @@
     "static/js/3.3abaea3a.chunk.js.map": "/reactpixabay/static/js/3.3abaea3a.chunk.js.map",
     "index.html": "/reactpixabay/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/reactpixabay/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.57cc0a5b.chunk.js.LICENSE.txt": "/reactpixabay/static/js/2.57cc0a5b.chunk.js.LICENSE.txt"
+    "static/js/2.57cc0a5b.chunk.js.LICENSE.txt": "/reactpixabay/static/js/2.57cc0a5b.chunk.js.LICENSE.txt",
+    "static/media/pusycat.6e362dfb.gif": "/reactpixabay/static/media/pusycat.6e362dfb.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.064ca45d.js",
     "static/js/2.57cc0a5b.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.96f35cf3.chunk.js"
+    "static/js/main.fed44f67.chunk.js"
   ]
 }
