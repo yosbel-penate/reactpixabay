@@ -1,14 +1,11 @@
 import React, { Component } from 'react'
 
 export default class Search extends Component {
-    
     SearchRef=React.createRef();
-
     obtenerDatos = (e) =>{
         e.preventDefault();
         this.props.dataSearch(this.SearchRef.current.value)
     }
-
     render() {
         return (
             <form onSubmit={this.obtenerDatos}>

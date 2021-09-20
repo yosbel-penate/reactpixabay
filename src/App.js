@@ -1,26 +1,24 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import Search from './componets/search';
-import Result from './componets/result'
-export class App extends Component {
+import Result from './componets/result';
+import logo from './assets/pusycat.gif';
 
+export class App extends Component {
   state={
     terms:'',
     images:[],
     page:''
   }
-
   scroll=()=>{
     const element=document.querySelector('.jumbotron');
     element.scrollIntoView('smooth', 'start');
   }
-
   consultApi=()=>{
     const url=`https://pixabay.com/api/?key=23459354-3cb2e5cd9a04660b7843329b4&q=${this.state.terms}&per_page=30&page=${this.state.page}`
     fetch(url)
     .then(response=>response.json())
     .then(resultSearch=>this.setState({images:resultSearch.hits}));
   }
-
   dataSearch= term =>{
     this.setState({
       terms:term,
@@ -31,7 +29,6 @@ export class App extends Component {
       }
     )
   }
-
   previousPage=()=>{
     let actualPage=this.state.page;
     actualPage--;
@@ -44,7 +41,6 @@ export class App extends Component {
       }
       );
   }
-
   nextPage=()=>{
     let actualPage=this.state.page;
     actualPage++;
@@ -56,18 +52,22 @@ export class App extends Component {
         }
       );
   }
-
   render() {
     return (
       <div>
         <div className="app container">
-          <div className='jumbotron'>
-            <div className='lead text-center m-2'>
-              <h1>Buscador de Imágenes</h1>
+          <div className='jumbotron jumbotron-fluid lg '>
+          <div className='row' style={{backgroundColor: '#191919'}}>
+              <div className="form-group col-md-3  p-3">
+                <img src={logo} alt="loading..." class="rounded float-left w-50"/>
+              </div>
+              <div className="form-group col-md-9 p-2">
+                <div className='lead text-center m-2'>
+                 <h1>Buscador de Imágenes</h1>
+                 </div>
+                 <Search dataSearch={this.dataSearch}/>
+                 </div>
             </div>
-            <Search 
-              dataSearch={this.dataSearch}
-            />
           </div>
         </div>
         <div className="row justify-content-center">
