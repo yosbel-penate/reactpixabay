@@ -17,7 +17,7 @@ export default class Search extends Component {
                         <input ref={this.SearchRef} type="text" className="form-control
                         form-control-lg" placeholder="Search you image. Example: futbol"/>
                     </div>
-                    <div className="form-group col-md-4">
+                    <div className="form-group col-md-4 p-2">
                         <input type="submit" className="btn btn-lg btn-danger btn-block" />
                     </div>
                 </div>
