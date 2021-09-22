@@ -71,4 +71,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Deploy on github
 
+git add .
+git commit -m "add first deploy6"
+git push origin main
+npm run deploy   
+
 https://yosbel-penate.github.io/reactpixabay/

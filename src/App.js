@@ -58,7 +58,7 @@ export class App extends Component {
           <div className='jumbotron jumbotron-fluid lg'>
               <div className='row form-group justify-content-center d-sm-block '>
                   <div className='row' style={{backgroundColor: '#191919'}}>
-                    <div className="form-group col-sm-1 col-md-4">
+                    <div className="form-group col-sm-12 col-md-4">
                         <img src={logo} alt="loading..." class="w-50"/>
                     </div>
                     <div className="form-group col-sm-12 col-md-8">
