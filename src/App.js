@@ -54,29 +54,31 @@ export class App extends Component {
   }
   render() {
     return (
-      <div>
-        <div className="app container">
-          <div className='jumbotron jumbotron-fluid lg '>
-          <div className='row' style={{backgroundColor: '#191919'}}>
-              <div className="form-group col-md-3  p-3">
-                <img src={logo} alt="loading..." class="rounded float-left w-50"/>
+      <div className="app container">
+          <div className='jumbotron jumbotron-fluid lg'>
+              <div className='row form-group justify-content-center d-sm-block '>
+                  <div className='row' style={{backgroundColor: '#191919'}}>
+                    <div className="form-group col-sm-1 col-md-4">
+                        <img src={logo} alt="loading..." class="w-50"/>
+                    </div>
+                    <div className="form-group col-sm-12 col-md-8">
+                        <div className='lead text-center m-2'>
+                            <h1>Naara Imágenes</h1>
+                        </div>
+                        <div className='lead'>
+                          <Search dataSearch={this.dataSearch}/>
+                        </div>
+                    </div>
+                  </div>
+                  <div className="form-group justify-content-center">
+                    <Result
+                      images={this.state.images}
+                      previousPage={this.previousPage}
+                      nextPage={this.nextPage}
+                  />
               </div>
-              <div className="form-group col-md-9 p-2">
-                <div className='lead text-center m-2'>
-                 <h1>Buscador de Imágenes</h1>
-                 </div>
-                 <Search dataSearch={this.dataSearch}/>
-                 </div>
             </div>
           </div>
-        </div>
-        <div className="row justify-content-center">
-          <Result
-            images={this.state.images}
-            previousPage={this.previousPage}
-            nextPage={this.nextPage}
-          />
-        </div>
       </div>
     )
   }
