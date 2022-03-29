@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Search from './componets/search';
 import Result from './componets/result';
-import logo from './assets/pusycat.gif';
+import logo from './assets/logo-fondo-azul-transp.png';
 
 export class App extends Component {
   state={
@@ -54,32 +54,33 @@ export class App extends Component {
   }
   render() {
     return (
-      <div className="app container">
-          <div className='jumbotron jumbotron-fluid lg'>
-              <div className='row form-group justify-content-center d-sm-block '>
-                  <div className='row' style={{backgroundColor: '#191919'}}>
-                    <div className="form-group col-sm-12 col-md-4">
-                        <img src={logo} alt="loading..." class="w-50"/>
-                    </div>
-                    <div className="form-group col-sm-12 col-md-8">
-                        <div className='lead text-center m-2'>
-                            <h1>Naara Imágenes</h1>
-                        </div>
-                        <div className='lead'>
-                          <Search dataSearch={this.dataSearch}/>
-                        </div>
-                    </div>
+      <React.Fragment>
+        <div className="app">
+          <div className='row'>
+            <div className="container fixed-top">
+              <div className='row' style={{backgroundColor: '#00243D'}}>
+                <div className="col-sm"></div>
+                  <div className="col-sm-3 align-content-end">
+                      <img src={logo} alt="loading..." class="w-50 m-2"/>
                   </div>
-                  <div className="form-group justify-content-center">
-                    <Result
-                      images={this.state.images}
-                      previousPage={this.previousPage}
-                      nextPage={this.nextPage}
-                  />
-              </div>
+                  <div className="col-sm-8">
+                      <div className='lead'>
+                        <Search dataSearch={this.dataSearch}/>
+                      </div>
+                  </div>
+                  <div className="col-sm"></div>
+                </div>
+            </div>
+            <div className="form-group justify-content-center">
+              <Result
+                images={this.state.images}
+                previousPage={this.previousPage}
+                nextPage={this.nextPage}
+              />
             </div>
           </div>
-      </div>
+        </div>
+      </React.Fragment>
     )
   }
 }

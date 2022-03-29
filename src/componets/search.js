@@ -9,13 +9,15 @@ export default class Search extends Component {
     render() {
         return (
             <form onSubmit={this.obtenerDatos}>
-                <div className="row">
-                    <div className="form-group col-md-8 p-2">
-                        <input ref={this.SearchRef} type="text" className="form-control
-                        form-control-lg" placeholder="Search you image. Example: futbol"/>
-                    </div>
-                    <div className="form-group col-md-4 p-2">
-                        <input type="submit" className="btn btn-lg btn-danger btn-block" />
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <div className="col-8 p-2">
+                            <input ref={this.SearchRef} type="text" className="form-control
+                                form-control-lg" placeholder="Search you image. Example: futbol"/>
+                        </div>
+                        <div className="col-4 p-2">
+                            <input type="submit" className="btn btn-lg btn-info btn-block" />
+                        </div>
                     </div>
                 </div>
             </form>
